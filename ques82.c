@@ -1,0 +1,31 @@
+/*
+Q82: Write a C program to print each character
+of a string on a new line.
+
+Sample Test Case:
+
+Input:
+Hi
+
+Output:
+H
+i
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    char str[100];
+    int i = 0;
+
+    fgets(str, sizeof(str), stdin);
+
+    while(str[i] != '\0' && str[i] != '\n')
+    {
+        printf("%c\n", str[i]);
+        i++;
+    }
+
+    return 0;
+}
